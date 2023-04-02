@@ -2,6 +2,7 @@ let input = document.getElementById("userInput");
 let uL = document.getElementById("todoList");
 let add = document.getElementById("addButton");
 let takeOff = document.getElementsByClassName("remOve");
+let oneTask = document.getElementsByClassName("listTask");
 
 function checkInputLength(){
     return input.value.length;
@@ -34,4 +35,5 @@ document.addEventListener('click', function(event){
     event.target.parentElement.remove();
     }
 })
+
 
